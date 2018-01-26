@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Traffic racer</title>
+<style>
+
+#body
+{
+   height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #45d678;
+    font-family: sans-serif;
+}
+.container{
+    height: 160%;
+    width: 50%;
+    background-color: Gray;
+    color: white;
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: center;
+    }
+.container *{
+  text-align: left;
+  }
+  li{
+    list-style: square;
+    text-align: left;
+    color: black;
+  }
+  summary{
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body id="body">
+<p>
+
+</p>
+<center>
+<div class="container"  style="border:3px;border-style:solid;border-color:#ffoooo;padding:1em;">
+
+  <details>
+    <summary>Controls</summary>
+    <ul>
+      <li>Right arrow to move right</li>
+      <li>Left arrow to move left</li>
+      <li>Up arrow for move forward</li>
+      <li>Down arrow for move backward</li>
+    </ul>
+  </details>
+  <details>
+    <summary>Rules</summary>
+    <ul>
+      <li><b>If your car crashes you lose</b></li>
+      <li><b>If you pass over an oil spot you will lose control for 2 seconds</b></li>
+      <li><b>You move to the next level when you get 30 point</b></li>
+    </ul>
+  </details>
+  <audio id="sound" src="MainTheme.mp3"></audio>
+  </div>
+  </center>
+
+</body>
+</html>

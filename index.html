@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Traffic racer</title>
+    <link href="main.css" rel="stylesheet" /> </head>
+
+<body>
+<div id="mp-player">
+            <audio id="sstart" src="start.mp3" style="display:none" autoplay></audio>
+			<audio id="sound" src='MainTheme.mp3' type='audio/mpeg' loop style="display:none"></audio>
+			<audio id="boom" src='boom.mp3' style="display:none"></audio>
+
+			
+	</div>
+    <!-- Score Div -->
+    <div id="score_div">
+        Score: <span id="score">0</span>
+    </div>
+	<div id="timer_div">
+        Timer: <span id="timer"> 00:00 </span>
+    </div>
+	<div id="level_div">
+        Level: <span id="level">1</span>
+    </div>
+    <!-- End Score Div -->
+    <!-- Road Div -->
+    <div id="container" style="width: 400px;height:595px;">
+        <!-- The Tree Lines That Separate The Road -->
+        <div id="line_1" class="line" style="top: -150px;"></div>
+        <div id="line_2" class="line" style="top: 150px;"></div>
+        <div id="line_3" class="line" style="top: 450px;"></div>
+        <!-- End Of Tree Lines -->
+        <!-- Oil Spot div -->
+        <div id="oilSpot" class="oil" style="left:30%;width:50px; top:70%;height:50px;">
+            <span>Oil</span>
+        </div>
+        <!-- End of Oil Spot -->
+        <!-- Car Div Which Constists Of 
+             Frond And Back Glass
+             Right And Left Light
+             The Four Tyres
+        -->
+        <div id="car" class="car" style="left:60%;width:40px; top:80%;height:60px;">
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+        </div>
+        <!-- End Car Div -->
+        <!-- Second Car Div -->
+        <div id="car_1" class="car" style="height:60px;width: 40px;top: 100px;background-color: #26c5ff;left: 60%;">
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+        </div>
+        <!-- End Second Car Div -->
+        <!-- Third Car Div -->
+        <div id="car_2" class="car" style="height:60px;width:40px;top:-200px;left: 40%;">
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+        </div>
+        <!-- End Third Car Div -->
+        <!-- Fourth Car Div -->
+        <div id="car_3" class="car" style="height: 60px;width: 40px;top: -350px;left: 50%;">
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+        </div>
+        <!-- End Fourth Car Div -->
+
+        <!-- Restart The Game Div -->
+		<img src="Boom.png"  id="crash" width="120" height="80" style="display: none;" >
+        <div id="restart_div"  style="display: none;">
+            <button id="restart_btn">
+                To Restart<br>
+                <small class="small_text">(press Enter)</small>
+            </button>
+        </div>
+		
+		
+        <!-- End Restart The Game Div -->
+    </div>
+    <!-- End Road Div -->
+    <script src="game.js"></script>
+
+</body>
+
+</html>
